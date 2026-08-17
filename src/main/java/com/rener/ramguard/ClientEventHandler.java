@@ -10,19 +10,19 @@ import net.minecraftforge.fml.relauncher.Side;
 @Mod.EventBusSubscriber(value = Side.CLIENT, modid = RamGuard.MODID)
 public class ClientEventHandler {
 
-    // Bandera para asegurar que la comprobación solo se realice una vez por sesión
+    // Flag to ensure the check is only performed once per session
     private static boolean hasCheckedRam = false;
 
     @SubscribeEvent
     public static void onGuiOpen(GuiOpenEvent event) {
-        // Solo comprobar cuando se intenta abrir el menú principal por primera vez
+        // Only check when the main menu is first attempted to be opened
         if (event.getGui() instanceof GuiMainMenu && !hasCheckedRam) {
             hasCheckedRam = true;
-            
-            // Obtener memoria máxima asignada en MB
+
+            // Get maximum allocated memory in MB
             long maxMemoryMB = Runtime.getRuntime().maxMemory() / (1024L * 1024L);
-            
-            // Si la memoria es menor a la requerida, interceptamos y mostramos nuestra GUI
+
+            // If memory is less than required, we intercept and show our GUI
             if (maxMemoryMB < ModConfig.requiredRamMB) {
                 event.setGui(new GuiMemoryWarning(maxMemoryMB));
             }
