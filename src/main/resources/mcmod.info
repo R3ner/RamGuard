@@ -1,0 +1,16 @@
+[
+{
+  "modid": "ramguard",
+  "name": "RamGuard",
+  "description": "Client-side mod that ensures players have enough RAM allocated to run the modpack smoothly.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Rener"],
+  "credits": "Created by Rener",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

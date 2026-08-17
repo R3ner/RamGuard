@@ -1,0 +1,31 @@
+plugins {
+    id 'com.gtnewhorizons.retrofuturagradle' version '1.4.2'
+    id 'java'
+}
+
+version = "1.0.0"
+group = "com.rener.ramguard"
+archivesBaseName = "RamGuard-1.12.2"
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+minecraft {
+    mcVersion = '1.12.2'
+    mcpMappingChannel = 'stable'
+    mcpMappingVersion = '39'
+}
+
+dependencies {
+}
+
+processResources {
+    inputs.property "version", project.version
+    inputs.property "mcversion", project.minecraft.mcVersion
+
+    filesMatching("mcmod.info") {
+        expand "version": project.version, "mcversion": project.minecraft.mcVersion
+    }
+}
