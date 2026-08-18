@@ -19,7 +19,7 @@ public class ModConfig {
     public static boolean forceCrashOnLowRam = false;
 
     @Config.Comment("URL to the tutorial on how to allocate more RAM to Minecraft")
-    public static String tutorialUrl = "https://example.com/ram-guide";
+    public static String tutorialUrl = "https://github.com/R3ner/RamGuard/wiki/RAM%E2%80%90Allocation%E2%80%90Guide";
 
     @Config.Comment("Hexadecimal color for the warning title (Example: 0xFF5555)")
     public static String headerColorHex = "0xFF5555";

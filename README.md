@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="src/main/resources/logo.png" alt="RamGuard Logo">
+</p>
+
 # RamGuard
 
 RamGuard is a client-side Minecraft Forge mod for 1.12.2 that ensures your players have enough RAM allocated to run the game smoothly. 
