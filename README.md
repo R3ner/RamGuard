@@ -7,6 +7,13 @@
 Have you ever had players complain about crashes or low frame rates only to discover that they were using your 250+ mod pack with 2 GB of RAM? RamGuard detects this immediately upon launch. It saves you from repeatedly responding to troubleshooting questions by reading the memory allotted before the main menu loads and alerting the player if additional memory is needed.
 
 ## Highlights
+<details>
+<summary>See Image</summary>
+
+![warn-screen](https://github.com/user-attachments/assets/30d8120a-3fc5-443c-9aa3-f7e1994a90f4)
+
+</details>
+
 * Set suggested and minimum RAM constraints (in megabytes).
 * complete control on button actions, colors and UI Text.
 * Placeholders and Autoformats
@@ -14,6 +21,13 @@ Have you ever had players complain about crashes or low frame rates only to disc
 * has a button for an external link that will take users directly to your setup instructions.
 
 ## KEY FEATURES
+<details>
+<summary>See Image</summary>
+
+![warn-screen](https://github.com/user-attachments/assets/7e0885bd-8921-47e0-933c-58948db2172d)
+
+</details>
+
 * **Configurable Limits:** Set the minimum required and recommended thresholds for RAM in megabytes.
 * **Full UI Control:** Setup every header, text line, color and button action straight from configuration.
 * **memory placeholders:** automatically format memory values ​​with `%MB%` and `%GB%`.
