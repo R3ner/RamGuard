@@ -4,20 +4,25 @@
 
 # RamGuard
 
-RamGuard is a client-side Minecraft Forge mod for 1.12.2 that ensures your players have enough RAM allocated to run the game smoothly. 
+Have you ever had players complain about crashes or low frame rates only to discover that they were using your 250+ mod pack with 2 GB of RAM? RamGuard detects this immediately upon launch. It saves you from repeatedly responding to troubleshooting questions by reading the memory allotted before the main menu loads and alerting the player if additional memory is needed.
 
-If a player launches the game with insufficient RAM, a customizable warning screen will intercept the Main Menu, prompting them to allocate more memory or quit the game.
+## Highlights
+* Set suggested and minimum RAM constraints (in megabytes).
+* complete control on button actions, colors and UI Text.
+* Placeholders and Autoformats
+* There’s an option to strictly require enough RAM before players are allowed to access the menu.
+* has a button for an external link that will take users directly to your setup instructions.
 
-## Features
-* **Configurable Thresholds**: Set your modpack's minimum required RAM and recommended RAM.
-* **Fully Customizable Text**: All warning texts, titles, and buttons can be modified and translated directly in the configuration file.
-* **Memory Conversion**: The mod automatically replaces placeholders (`%MB%` and `%GB%`) to display both Megabytes and Gigabytes format.
-* **Enforced Limits**: You can configure `forceCrashOnLowRam = true` to force the player to quit if the minimum threshold is not met.
-* **Tutorial Link**: Include a helpful URL guiding players on how to allocate more RAM in their launcher.
+## KEY FEATURES
+* **Configurable Limits:** Set the minimum required and recommended thresholds for RAM in megabytes.
+* **Full UI Control:** Setup every header, text line, color and button action straight from configuration.
+* **memory placeholders:** automatically format memory values ​​with %MB% and %GB%.
+* **Forced crash:** Optionally require sufficient RAM for players to access the main menu (forceCrashOnLowRam = true).
+* **Direct Setup Guide:** An interactive button that takes the players directly to your launcher setup tutorial.
 
-## Configuration
-Upon first launch, a `ramguard.cfg` file will be generated in your `config` folder.
-You can use `%MB%` and `%GB%` in the text fields to dynamically inject the RAM values into your custom messages.
+## Setup
+When you first start it a ramguard.cfg file will be created in your config/ directory.
+Feel free to use the %MB% and %GB% placeholders in the text fields to dynamically inject memory values into your custom warnings.
 
 ## Installation
 Drop the compiled `.jar` file into your `mods/` folder. It is safe to include in server modpacks as it is marked as a client-side only mod.
