@@ -10,12 +10,12 @@ import net.minecraftforge.fml.relauncher.Side;
 @Mod.EventBusSubscriber(value = Side.CLIENT, modid = RamGuard.MODID)
 public class ClientEventHandler {
 
-    // Flag to ensure the check is only performed once per session
+    // Flag to make sure the check is only performed once per session (i felt dumb when i missed this xd)
     private static boolean hasCheckedRam = false;
 
     @SubscribeEvent
     public static void onGuiOpen(GuiOpenEvent event) {
-        // Only check when the main menu is first attempted to be opened
+        // Only check when the main menu is first attempted to be opened (thanks to Rommy97 for this piece ^^ )
         if (event.getGui() instanceof GuiMainMenu && !hasCheckedRam) {
             hasCheckedRam = true;
 
